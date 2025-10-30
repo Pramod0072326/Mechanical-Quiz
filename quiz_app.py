@@ -41,7 +41,7 @@ def set_background(image_file):
         text-align: center !important;
     }}
     label {{
-        font-size: 18px !important;
+        font-size: 20px !important;
         font-weight: 600 !important;
     }}
     </style>
@@ -301,4 +301,5 @@ if st.session_state.logged_in and not st.session_state.is_admin and st.session_s
         for key in ["logged_in", "ready", "user_roll"]:
             st.session_state[key] = False
         st.rerun()
+
 
